@@ -9,7 +9,6 @@
 # include <string.h>
 # include <unistd.h>
 # include <stdlib.h>
-# include <stdio.h>
 
 # define CHUNK_SIZE		100 // can be changed
 # define PULL_SIZE		2048 // can be changed
