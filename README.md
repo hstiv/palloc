@@ -2,6 +2,7 @@
 Pull memory allocation library
     
     Commands:
+    
     make - creates libft.a and object files
     
     make fclean - delete libft.a and object files
