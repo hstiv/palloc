@@ -1,5 +1,7 @@
 #include "../includes/palloc.h"
 
+// testing size of chunks
+
 int			main()
 {
 	char	*ptr;
