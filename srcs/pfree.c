@@ -18,16 +18,16 @@ void				pfree(void *ptr)
 	(ptr == NULL) ? threw_error("Error: pfree function recived [NULL]\n") : 0;
 	while (i < CHUNK_COUNT)
 	{
-		// looking for struct where ptr pulled from
+		// looks for a struct ptr pulled from
 		if (s_buff[i].is_used && ptr == s_buff[i].ptr)
 		{
-			// setting that it is not used anymore;
+			// setting that it is not used anymore
 			s_buff[i].is_used = 0;
 			ptr = NULL;
 			return ;
 		}
 		i++;
 	}
-	// if ptr is not from s_buff throwing error
+	// if ptr is not from s_buff
 	threw_error("Error: pfree function wrong usage\n");
 }
