@@ -1,7 +1,7 @@
 # palloc
 Pull memory allocation library.
 
-    This project was made on C.
+    This project was made in C.
     
     Commands:
     
