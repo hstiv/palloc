@@ -1,5 +1,7 @@
 #include "../includes/palloc.h"
 
+// testing is memory allocated properly
+
 int			main()
 {
 	char	*ptr;
@@ -7,7 +9,7 @@ int			main()
 
 	i = 0;
 	p_init();
-	while (i++ < 20)
+	while (i++ < CHUNK_COUNT)
 		ptr = (char *)palloc();
 	pfree((void *)ptr);
 	write(1, "\033[0;32m", 7);
