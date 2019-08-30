@@ -15,6 +15,7 @@ void				pfree(void *ptr)
 	int				i;
 
 	i = 0;
+	(ptr == NULL) ? threw_error("Error: pfree function recived [NULL]\n") : 0;
 	while (i < CHUNK_COUNT)
 	{
 		// looking for struct where ptr pulled from
@@ -27,6 +28,6 @@ void				pfree(void *ptr)
 		}
 		i++;
 	}
-	// if ptr not from s_buff throwing error
-	threw_error("Error: pfree function wrong usage");
+	// if ptr is not from s_buff throwing error
+	threw_error("Error: pfree function wrong usage\n");
 }

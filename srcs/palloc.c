@@ -14,7 +14,10 @@ void			*palloc()
 	while (i < CHUNK_COUNT)
 	{
 		if (s_buff[i].is_used == 0)
+		{
 			ptr = s_buff[i].ptr;
+			s_buff[i].is_used = 1;
+		}
 		i++;
 	}
 	return (ptr);

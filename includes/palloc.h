@@ -9,8 +9,9 @@
 # include <string.h>
 # include <unistd.h>
 # include <stdlib.h>
+# include <stdio.h>
 
-# define CHUNK_SIZE		55
+# define CHUNK_SIZE		100
 # define PULL_SIZE		2048
 # define CHUNK_COUNT	PULL_SIZE / CHUNK_SIZE - 1
 
@@ -19,7 +20,7 @@
 */
 typedef struct 			s_pull
 {
-	void				*ptr[CHUNK_SIZE];
+	uint32_t			ptr[CHUNK_SIZE];
 	int					is_used;
 }						t_pull;
 
@@ -31,7 +32,7 @@ t_pull					s_buff[CHUNK_COUNT];
 /*
 **			Functions			*
 */
-void					p_init(void); // pull initialization
+void					p_init(); // pull initialization
 void					*palloc(); // return ptr from static mem
 void					pfree(void *ptr); // frees ptr*
 
