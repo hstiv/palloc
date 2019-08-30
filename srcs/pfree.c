@@ -18,7 +18,7 @@ void				pfree(void *ptr)
 	while (i < CHUNK_COUNT)
 	{
 		// looking for struct where ptr pulled from
-		if (s_buff[i].is_used && ptr = s_buff[i].ptr)
+		if (s_buff[i].is_used && ptr == s_buff[i].ptr)
 		{
 			// setting that it is not used anymore;
 			s_buff[i].is_used = 0;

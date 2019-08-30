@@ -7,6 +7,8 @@
 
 # include <stdint.h>
 # include <string.h>
+# include <unistd.h>
+# include <stdlib.h>
 
 # define CHUNK_SIZE		55
 # define PULL_SIZE		2048
