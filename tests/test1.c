@@ -3,9 +3,12 @@
 int			main()
 {
 	char	*ptr;
+	int		i;
 
+	i = 0;
 	p_init();
-	ptr = (char *)palloc();
+	while (i++ < 20)
+		ptr = (char *)palloc();
 	pfree((void *)ptr);
 	write(1, "\033[0;32m", 7);
 	write(1, "[OK]", 4);

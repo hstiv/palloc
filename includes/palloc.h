@@ -13,7 +13,7 @@
 
 # define CHUNK_SIZE		100
 # define PULL_SIZE		2048
-# define CHUNK_COUNT	PULL_SIZE / CHUNK_SIZE - 1
+# define CHUNK_COUNT	PULL_SIZE / CHUNK_SIZE
 
 /*
 **			Structure			*

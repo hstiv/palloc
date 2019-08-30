@@ -7,18 +7,17 @@
 void			*palloc()
 {
 	int			i;
-	void		*ptr;
 
 	i = 0;
-	ptr = NULL;
+	// looks for free memory
 	while (i < CHUNK_COUNT)
 	{
 		if (s_buff[i].is_used == 0)
 		{
-			ptr = s_buff[i].ptr;
 			s_buff[i].is_used = 1;
+			return (s_buff[i].ptr);
 		}
 		i++;
 	}
-	return (ptr);
+	return (NULL);
 }
