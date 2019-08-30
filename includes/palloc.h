@@ -11,8 +11,9 @@
 # include <stdlib.h>
 # include <stdio.h>
 
-# define CHUNK_SIZE		100
-# define PULL_SIZE		2048
+# define CHUNK_SIZE		100 // can be changed
+# define PULL_SIZE		2048 // can be changed
+
 # define CHUNK_COUNT	PULL_SIZE / CHUNK_SIZE
 
 /*
