@@ -1,5 +1,7 @@
 #include "../includes/palloc.h"
 
+// testing usage
+
 void		putstr(char *s)
 {
 	int		i;
